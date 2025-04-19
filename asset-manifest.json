@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/m1-nt/grid-view.git/static/css/main.ec7af404.css",
+    "main.js": "/m1-nt/grid-view.git/static/js/main.24c5392d.js",
+    "static/js/453.a1f3af2b.chunk.js": "/m1-nt/grid-view.git/static/js/453.a1f3af2b.chunk.js",
+    "index.html": "/m1-nt/grid-view.git/index.html",
+    "main.ec7af404.css.map": "/m1-nt/grid-view.git/static/css/main.ec7af404.css.map",
+    "main.24c5392d.js.map": "/m1-nt/grid-view.git/static/js/main.24c5392d.js.map",
+    "453.a1f3af2b.chunk.js.map": "/m1-nt/grid-view.git/static/js/453.a1f3af2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec7af404.css",
+    "static/js/main.24c5392d.js"
+  ]
+}
