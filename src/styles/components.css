@@ -1,0 +1,83 @@
+button {
+  color: ghostwhite;
+  background-color: black;
+  padding: 0.5rem 1.3rem;
+  border-radius: 100vh;
+  border: 1px solid ghostwhite;
+  margin: 0 0.3rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.fileUpBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2列に分割 */
+  gap: 0.5rem;
+}
+
+.fileInputBtn {
+  color: ghostwhite;
+  background-color: skyblue;
+  width: 140px;
+  padding: 0.5rem 0.3rem;
+  border-radius: 100vh;
+  border: 1px solid ghostwhite;
+}
+.fileInputBtn:hover {
+	background: lightskyblue;
+	color: ghostwhite;
+}
+
+/* 各画像を囲むラッパー */
+.image-viewer {
+  margin-top: 0.5rem;
+}
+.image-viewer img {
+  max-width: 100%;
+}
+
+/* Mainに表示する画像のスタイル */
+.main-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;             /* アスペクト比を3:4に固定 */
+  object-fit: cover;               /* 中心をトリミングして表示 */
+  object-position: center;         /* トリミングの基準を中央に */
+  display: block;
+  margin: 0;
+  padding: 0;
+  filter: brightness(1.1) saturate(1.1) contrast(0.9);
+}
+
+/* サイドバー用のローディングオーバーレイ */
+.sidebar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明の白 */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  pointer-events: none; /* オーバーレイ表示中でもボタン等はクリック不可になる */
+}
+
+/* Sidebarで画像を表示するコンテナ */
+.image-scroll-wrapper {
+  position: relative;
+}
+
+/* スクロール用の外枠 */
+.scrollable-container {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* Optional: 見やすくするため */
+  border-radius: 8px;
+  height: 95vh;
+}

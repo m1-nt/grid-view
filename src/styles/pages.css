@@ -1,0 +1,33 @@
+.common-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: ghostwhite;
+}
+.common-sidebar {
+  display: flex; /* 中の要素を縦に並べる */
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: ghostwhite;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px; /* 横幅を固定 */
+  min-width: 295px;
+  height: 100vh; /* 画面の高さに合わせる */
+  padding: 0.5rem;
+}
+.common-main {
+  background-color: ghostwhite;
+  height: 100vh;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列固定 */
+  gap: 4px;
+  justify-items: stretch;  /* 各カラムの幅いっぱいに要素を広げる */
+  align-items: start;
+  align-content: start;
+  overflow-y: auto; /* 必要に応じてスクロール */
+}
